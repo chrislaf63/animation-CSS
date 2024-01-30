@@ -1,0 +1,77 @@
+body{
+    background-color:rgb(208, 223, 208);
+}
+
+.container{
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.anim{
+    position: absolute;
+    top: 0;
+}
+
+.anim-1{
+    background-color: blueviolet;
+    left: 80px;
+    animation: animation-1 2s cubic-bezier(.97,.01,.49,1) alternate infinite;
+}
+
+.anim-2{
+    background-color: #FF0000;
+    left: 0;
+    animation: animation-2 2s cubic-bezier(.97,.01,.49,1) alternate infinite;
+}
+
+.anim-3{
+    background-color: gold;
+    left: 0;
+    animation: animation-3 2s cubic-bezier(.97,.01,.49,1) alternate infinite;
+}
+
+@keyframes animation-1{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 160px;
+    }
+}
+
+@keyframes animation-2{
+    0%{
+        top: 0;
+        left: 0;
+    }
+    100%{
+        top: 160px;
+        left: 160px;
+    }
+}
+
+@keyframes animation-3{
+    0%{
+        top: 0;
+        left: 0;
+    }
+    33%{
+        top: 0;
+        left: 160px;
+    }
+    66%{
+        top: 160px;
+        left: 0;
+    }
+    100%{
+        top: 160px;
+        left: 160px;
+    }
+}
